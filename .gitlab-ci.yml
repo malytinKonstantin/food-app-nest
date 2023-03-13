@@ -1,0 +1,17 @@
+stages:
+  - build
+#  - deploy stage
+
+## Build stage
+build:
+  stage: build
+  tags:
+    - stagewk
+  variables:
+    GIT_STRATEGY: variable
+  script:
+    - echo "Build"
+    - ls
+    - npm install
+    - docker rm f_nx-app -f
+    - docker-compose -f dc-app.yml up --build -d

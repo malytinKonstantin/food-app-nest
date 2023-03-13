@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "admin",
+    "database": "food_development",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "admin",
+    "password": "admin",
+    "database": "food_test",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "admin",
+    "password": "admin",
+    "database": "food_production",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
